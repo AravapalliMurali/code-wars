@@ -15,3 +15,13 @@ Testing: [1, 1, 1, 1] ==> 15
 Testing: [1, 0, 1, 1] ==> 11
 However, the arrays can have varying lengths, not just limited to 4.
 */
+const binaryNumberToInteger = arr => {
+    let result = 0
+    arr= arr.join('')
+    for(let i=arr.length-1;i>=0;i--){
+        result += arr[arr.length-(i+1)]* (2**i)
+    }
+    return result
+}
+
+console.log(binaryNumberToInteger([0,1,0,1]))
