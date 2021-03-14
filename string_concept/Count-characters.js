@@ -12,7 +12,8 @@ function count (string) {
               result[k] = 1
           }
     }
+    
     return result 
 }
-console.log(count('it working'))
+console.log(count('abacddbec'))
 
